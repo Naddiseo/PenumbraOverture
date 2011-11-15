@@ -1768,7 +1768,7 @@ void iGameEnemy::LoadFromSaveData(iGameEntity_SaveData *apSaveData)
 
 	mpMover->GetCharBody()->SetPitch(pData->mvCharBodyRotation.x);
 	mpMover->GetCharBody()->SetYaw(pData->mvCharBodyRotation.y);
-	mpMover->GetCharBody()->UpdateMoveMarix();
+	mpMover->GetCharBody()->UpdateMoveMatrix();
 
 	kCopyFromVar(pData,mlCurrentPatrolNode);
 	kCopyFromVar(pData,mvLastPlayerPos);
